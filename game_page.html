@@ -10,34 +10,36 @@
 <link rel="stylesheet" type="text/css" href="game.css">
 </head>
 <body>
-
-<div class="container">
-	<center>
+	<h4 id = "player1_name"></h4>
+	<span id = "score1"></span>
+	<br>
+	<h4 id = "player2_name"></h4>
+	<span id = "score2"></span>
+	<div class="container">
+		<center>
 		<h2 style="color: white;">Guess The Word!</h2>
 
-<h3 id = "player_question"></h3>
-<br>
-<h3 id = "player_answer"></h3>
-<br>
-<div id = "output"class = "col-lg-6"></div>
+		<h3 id = "player_question"></h3>
 		<br>
+		<h3 id = "player_answer"></h3>
 		<br>
-
-		<label>Send You Word: <b style="color: red">Try putting word which has 5 or more alphabets</b></label>
-
+		<div id = "output"class = "col-lg-6"></div>
+				<br>
+				<br>
+		
+				<label>Send You Word: <b style="color: red">Try putting word which has 5 or more alphabets</b></label>
+		
+				<br>
+		<input type="text"id = "Answer"class = "form-control"placeholder = "Word">
 		<br>
-<input type="text"id = "Answer"class = "form-control"placeholder = "word">
-<br>
-<button onclick="Send()"class = "btn btn-success"style = "width:30%;">Send</button>
+		<button onclick="Send()"class = "btn btn-success"style = "width:30%;">Send</button>
 	</center>
+</div>
+	
+	
+	
 </div>
 
 <script src="game_page.js"></script>
-<h4 id = "player1_name"></h4>
-<span id = "score1"></span>
-<br>
-<h4 id = "player2_name"></h4>
-<span id = "score2"></span>
-
 </body>
 </html>
